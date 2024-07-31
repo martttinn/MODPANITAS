@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "panitas:cogollo"
+    },
+    {
+      "item": "panitas:cogollo"
+    },
+    {
+      "item": "panitas:cogollo"
+    },
+    {
+      "item": "panitas:cogollo"
+    },
+    {
+      "item": "panitas:cogollo"
+    },
+    {
+      "item": "panitas:cogollo"
+    },
+    {
+      "item": "panitas:cogollo"
+    },
+    {
+      "item": "panitas:cogollo"
+    },
+    {
+      "item": "panitas:cogollo"
+    }
+  ],
+  "result": {
+    "item": "panitas:weed_block"
+  }
+}

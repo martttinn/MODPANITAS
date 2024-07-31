@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "panitas:item/botas_marihuana",
+    "layer1": "minecraft:trims/items/boots_trim_quartz"
+  }
+}

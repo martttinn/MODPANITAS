@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cogollo": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "panitas:cogollo"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_hoja_tabaco": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "panitas:hoja_tabaco"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "panitas:rolling_station"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cogollo",
+      "has_hoja_tabaco",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "panitas:rolling_station"
+    ]
+  },
+  "sends_telemetry_event": false
+}

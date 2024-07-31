@@ -1,0 +1,40 @@
+{
+  "item.panitas.seta": "Setica",
+  "item.panitas.blunt": "Blunt",
+  "item.panitas.lit_blunt": "Blunt prendio",
+  "tooltip.panitas.blunt": "Sientes que vuelas pero cuidado con la gumia",
+
+  "item.panitas.espada_dildo": "Espada Dildo",
+  "item.panitas.casco_marihuana": "Casco Porreta",
+  "item.panitas.pechera_marihuana": "Pechera Porreta",
+  "item.panitas.pantalones_marihuana": "Pantalones Porreta",
+  "item.panitas.botas_marihuana": "Botas Porreta",
+
+  "item.panitas.moneda": "Pana Coin",
+  "tooltip.panitas.moneda": "La moneda de los repanitas",
+  "item.panitas.piggy_bank": "Piggy Bank",
+  "tooltip.panitas.piggy_bank": "Almacena aqui tus Pana Coins",
+
+  "item.panitas.weed_seeds": "Semilla de Marihuana",
+  "item.panitas.cogollo": "Cogollo de Marihuana",
+  "block.panitas.weed_crop": "Planta de Marihuana",
+  "block.pantias.weed_block": "Bloque de Marihuana",
+
+  "item.panitas.tobbacco_seeds": "Semilla de Tabaco",
+  "block.panitas.tobacco_crop": "Planta de Tabaco",
+  "item.panitas.hoja_tabaco": "Hoja de Tabaco",
+
+  "item.panitas.gema_es_mujer_disco": "Himno nacional panas",
+  "item.panitas.gema_es_mujer_disco.desc": "Todos se lo saben",
+
+  "creativetab.foods_tab": "PanitasMod - Foods",
+  "creativetab.weapons_tab": "PanitasMod - Weapons",
+  "creativetab.music_tab": "PanitasMod - Music",
+  "creativetab.misc_tab": "PanitasMod - Misc",
+  "creativetab.crops_tab" : "PanitasMod - Crops",
+  "creativetab.functional_blocks_tab": "PanitasMod - Bloques Funcionales",
+
+  "panitas.sounds.gemido_hentai": "AUUUUUGHHHH",
+
+  "entity.minecraft.villager.panitas.plug": "Camello"
+}

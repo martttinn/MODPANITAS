@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "age=0": { "model": "panitas:block/tobbacco_crop_s0" },
+    "age=1": { "model": "panitas:block/tobbacco_crop_s1" },
+    "age=2": { "model": "panitas:block/tobbacco_crop_s2" },
+    "age=3": { "model": "panitas:block/tobbacco_crop_s3" },
+    "age=4": { "model": "panitas:block/tobbacco_crop_s4" }
+  }
+}

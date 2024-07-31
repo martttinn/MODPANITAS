@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "" : {"model": "panitas:block/rolling_station"}
+  }
+}

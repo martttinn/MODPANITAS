@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "panitas:block/textura_weed_s3"
+  }
+}

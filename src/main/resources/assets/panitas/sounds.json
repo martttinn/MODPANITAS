@@ -1,0 +1,19 @@
+{
+  "gemido_hentai": {
+    "subtitles": "panitas.sounds.gemido_hentai",
+    "sounds": [
+      "panitas:gemido_hentai"
+    ]
+  },
+
+  "gema_es_mujer": {
+    "sounds": [
+      {
+        "name": "panitas:gema_es_mujer",
+        "stream" : true
+      }
+    ]
+  }
+}
+
+

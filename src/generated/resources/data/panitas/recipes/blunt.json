@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "panitas:cogollo"
+    },
+    "Y": {
+      "item": "panitas:hoja_tabaco"
+    }
+  },
+  "pattern": [
+    "XX",
+    "YY"
+  ],
+  "result": {
+    "item": "panitas:blunt"
+  },
+  "show_notification": true
+}

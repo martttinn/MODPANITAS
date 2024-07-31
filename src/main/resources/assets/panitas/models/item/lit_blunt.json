@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0":"panitas:item/textura_lit_blunt_animacion"
+  }
+}
