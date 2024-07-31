@@ -1,5 +1,7 @@
 package net.martin.panitasMod.event;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
+import net.martin.panitasMod.entity.ModEntities;
+import net.martin.panitasMod.entity.custom.StoneGolemEntity;
 import net.martin.panitasMod.items.ModItems;
 import net.martin.panitasMod.panitasMod;
 import net.martin.panitasMod.sound.ModSounds;
@@ -13,6 +15,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
@@ -28,6 +31,11 @@ import java.util.Random;
 public class ModEventHandler
 {
     private static final Random RANDOM = new Random();
+
+    @SubscribeEvent
+    public static void onRegisterAttributes(EntityAttributeCreationEvent event) {
+        event.put(ModEntities.GOLEM_PIEDRA.get(), StoneGolemEntity.createAttributes().build());
+    }
 
     // METODO QUE SE EJECUTA CADA VEZ QUE SE ATACA A UNA ENTIDAD
     @SubscribeEvent

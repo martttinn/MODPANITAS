@@ -18,8 +18,8 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import org.jetbrains.annotations.Nullable;
 
-public class StoneGolemEntity extends PathfinderMob {
-    public StoneGolemEntity(EntityType<? extends PathfinderMob> pEntityType, Level pLevel) {
+public class StoneGolemEntity extends Animal {
+    public StoneGolemEntity(EntityType<? extends Animal> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
     }
 
@@ -36,15 +36,20 @@ public class StoneGolemEntity extends PathfinderMob {
 
     public static AttributeSupplier.Builder createAttributes()
     {
-        return PathfinderMob.createMobAttributes()
+        return Animal.createMobAttributes()
                 .add(Attributes.MAX_HEALTH,100D)
                 .add(Attributes.MOVEMENT_SPEED,0.20D)
+                .add(Attributes.ATTACK_DAMAGE,8.0f)
                 .add(Attributes.ARMOR_TOUGHNESS,0.1f)
                 .add(Attributes.ARMOR, 1.0f)
-                .add(Attributes.ATTACK_DAMAGE,8.0f)
                 .add(Attributes.ATTACK_KNOCKBACK,1.0D)
                 .add(Attributes.FOLLOW_RANGE,35.0D)
                 .add(Attributes.KNOCKBACK_RESISTANCE,2.0D);
     }
 
+    @Nullable
+    @Override
+    public AgeableMob getBreedOffspring(ServerLevel serverLevel, AgeableMob ageableMob) {
+        return null;
+    }
 }
