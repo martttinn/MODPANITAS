@@ -1,5 +1,11 @@
-// 1.20.1	2024-07-30T10:07:13.6389174	Loot Tables
+// 1.20.1	2024-08-03T12:24:53.1010627	Loot Tables
+87acac44898a9807babe9ecc5e9e825c0b1cde17 data/panitas/loot_tables/blocks/astralon_leaves.json
+05c04d6e7e28fe973eae1cd49a038374494ea902 data/panitas/loot_tables/blocks/astralon_log.json
+ff5ec9410da7962b0dc3e6b9d738462fba2282b8 data/panitas/loot_tables/blocks/astralon_planks.json
+8872bd0209597795724609c15736e9fc80091607 data/panitas/loot_tables/blocks/astralon_wood.json
 44525723812930706331d6e4001fd9b83d6dc8d2 data/panitas/loot_tables/blocks/rolling_station.json
+09cb932f3e498faa05818cef46d76738ddab0ba6 data/panitas/loot_tables/blocks/stripped_astralon_log.json
+040acfaf57685b7129358cf426cce5714430dd0c data/panitas/loot_tables/blocks/stripped_astralon_wood.json
 30f9c49f2023b911d50869fb0d07aef97fa87687 data/panitas/loot_tables/blocks/tobbacco_crop.json
 06b027b297a92b0468339538f78d0f17a44ad6ad data/panitas/loot_tables/blocks/weed_block.json
 39d5ec914ae0fc6278e8b4083cf36c7876a88ff6 data/panitas/loot_tables/blocks/weed_crop.json

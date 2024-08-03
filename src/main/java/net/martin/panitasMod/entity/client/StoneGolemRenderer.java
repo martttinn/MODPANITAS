@@ -11,7 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 public class StoneGolemRenderer extends MobRenderer<StoneGolemEntity,golem_piedra<StoneGolemEntity>> {
 
     public StoneGolemRenderer(EntityRendererProvider.Context pContext) {
-        super(pContext, new golem_piedra<>(pContext.bakeLayer(ModModelLayers.GOLEM_PIEDRA_LAYER)),1.5f);
+        super(pContext, new golem_piedra<>(pContext.bakeLayer(ModModelLayers.GOLEM_PIEDRA_LAYER)),1.0f);
     }
 
     @Override

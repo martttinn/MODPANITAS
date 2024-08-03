@@ -24,10 +24,22 @@ public class ModItemTagGenerator extends ItemTagsProvider
     @Override
     protected void addTags(HolderLookup.Provider provider)
     {
+        // TAG PARA ARMADURA
         this.tag(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.CASCO_MARIHUANA.get(),
                         ModItems.PECHERA_MARIHUANA.get(),
                         ModItems.PANTALONES_MARIHUANA.get(),
                         ModItems.BOTAS_MARIHUANA.get());
+
+        // TAG PARA MADERA INFLAMABLE
+        this.tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.ASTRALON_LOG.get().asItem())
+                .add(ModBlocks.ASTRALON_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_ASTRALON_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_ASTRALON_WOOD.get().asItem());
+
+        // TAG PARA PLANKS
+        this.tag(ItemTags.PLANKS)
+                .add(ModBlocks.ASTRALON_PLANKS.get().asItem());
     }
 }

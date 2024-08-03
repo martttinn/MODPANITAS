@@ -30,6 +30,15 @@ public class ModBlockLootTables extends BlockLootSubProvider
         //SECCION BLOQUES GENERICOS
         this.dropSelf(ModBlocks.ROLLING_STATION.get());
         this.dropSelf(ModBlocks.WEED_BLOCK.get());
+        this.dropSelf(ModBlocks.ASTRALON_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_ASTRALON_LOG.get());
+        this.dropSelf(ModBlocks.ASTRALON_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_ASTRALON_WOOD.get());
+        this.dropSelf(ModBlocks.ASTRALON_PLANKS.get());
+
+        //SECCION DE HOJAS DE ARBOL
+        this.add(ModBlocks.ASTRALON_LEAVES.get(), block ->
+                createLeavesDrops(block,ModBlocks.WEED_BLOCK.get(),NORMAL_LEAVES_SAPLING_CHANCES)); // TODO: CAMBIAR AL SAPPLING
 
         //SECCION DE CROPS
         LootItemCondition.Builder Wlootitemcondition$builder = LootItemBlockStatePropertyCondition

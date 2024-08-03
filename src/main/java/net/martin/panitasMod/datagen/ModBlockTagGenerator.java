@@ -25,8 +25,24 @@ public class ModBlockTagGenerator extends BlockTagsProvider
     @Override
     protected void addTags(HolderLookup.Provider provider)
     {
+        // TAG PARA CROPS
         this.tag(BlockTags.CROPS)
                 .add(ModBlocks.WEED_CROP.get())
                 .add(ModBlocks.TOBBACCO_CROP.get());
+
+        // TAG PARA MADERAS INFLAMABLES
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.ASTRALON_LOG.get())
+                .add(ModBlocks.ASTRALON_WOOD.get())
+                .add(ModBlocks.STRIPPED_ASTRALON_LOG.get())
+                .add(ModBlocks.STRIPPED_ASTRALON_WOOD.get());
+
+        // TAG PARA PLANKS
+        this.tag(BlockTags.PLANKS)
+                .add(ModBlocks.ASTRALON_PLANKS.get());
+
+        // TAG PARA HOJAS
+        this.tag(BlockTags.LEAVES)
+                .add(ModBlocks.ASTRALON_LEAVES.get());
     }
 }

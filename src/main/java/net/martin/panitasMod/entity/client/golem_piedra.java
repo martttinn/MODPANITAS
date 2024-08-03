@@ -4,13 +4,13 @@ package net.martin.panitasMod.entity.client;
 // Paste this class into your mod and generate all required imports
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.minecraft.client.model.EntityModel;
+import net.martin.panitasMod.entity.animations.ModAnimationDefinitions;
+import net.martin.panitasMod.entity.custom.StoneGolemEntity;
 import net.minecraft.client.model.HierarchicalModel;
-import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
 
 public class golem_piedra<T extends Entity> extends HierarchicalModel<T> {
@@ -22,7 +22,7 @@ public class golem_piedra<T extends Entity> extends HierarchicalModel<T> {
 	private final ModelPart Rleg;
 	private final ModelPart Lleg;
 	private final ModelPart torso;
-	private final ModelPart hitbox;
+
 
 	public golem_piedra(ModelPart root) {
 		this.rock_golem = root.getChild("rock_golem");
@@ -33,7 +33,6 @@ public class golem_piedra<T extends Entity> extends HierarchicalModel<T> {
 		this.Rleg = this.body.getChild("Rleg");
 		this.Lleg = this.body.getChild("Lleg");
 		this.torso = this.body.getChild("torso");
-		this.hitbox = root.getChild("hitbox");
 	}
 
 	public static LayerDefinition createBodyLayer() {
@@ -76,20 +75,30 @@ public class golem_piedra<T extends Entity> extends HierarchicalModel<T> {
 		.texOffs(6, 6).addBox(1.0F, 2.8F, -0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.002F))
 		.texOffs(0, 23).addBox(-3.9F, 9.8F, 0.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.002F)), PartPose.offset(0.0F, -3.0F, -2.9F));
 
-		PartDefinition hitbox = partdefinition.addOrReplaceChild("hitbox", CubeListBuilder.create().texOffs(-36, -8).addBox(-19.0F, -49.0F, -2.0F, 38.0F, 48.0F, 10.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
-
 		return LayerDefinition.create(meshdefinition, 128, 128);
 	}
 
 	@Override
-	public void setupAnim(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+		this.root().getAllParts().forEach(ModelPart::resetPose);
+		this.applyHeadRotation(netHeadYaw,headPitch,ageInTicks);
 
+		this.animateWalk(ModAnimationDefinitions.walk,limbSwing,limbSwingAmount,1f,1f);
+		this.animate(((StoneGolemEntity)entity).idleAnimationState,ModAnimationDefinitions.idle,ageInTicks,1f);
 	}
+
+	private void applyHeadRotation(float pNetHeadYaw, float pHeadPitch, float pAgeInTicks) {
+		pNetHeadYaw = Mth.clamp(pNetHeadYaw, -30.0F, 30.0F);
+		pHeadPitch = Mth.clamp(pHeadPitch, -25.0F, 45.0F);
+
+		this.head.yRot = pNetHeadYaw * ((float)Math.PI / 180F);
+		this.head.xRot = pHeadPitch * ((float)Math.PI / 180F);
+	}
+
 
 	@Override
 	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		rock_golem.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		hitbox.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 
 	@Override

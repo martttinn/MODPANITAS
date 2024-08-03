@@ -32,11 +32,6 @@ public class ModEventHandler
 {
     private static final Random RANDOM = new Random();
 
-    @SubscribeEvent
-    public static void onRegisterAttributes(EntityAttributeCreationEvent event) {
-        event.put(ModEntities.GOLEM_PIEDRA.get(), StoneGolemEntity.createAttributes().build());
-    }
-
     // METODO QUE SE EJECUTA CADA VEZ QUE SE ATACA A UNA ENTIDAD
     @SubscribeEvent
     public static void onAttackEntity(AttackEntityEvent event)

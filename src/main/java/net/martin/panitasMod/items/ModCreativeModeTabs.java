@@ -68,6 +68,13 @@ public class ModCreativeModeTabs {
             .title(Component.translatable("creativetab.functional_blocks_tab"))
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModBlocks.ROLLING_STATION.get());
+                output.accept(ModBlocks.ASTRALON_WOOD.get());
+                output.accept(ModBlocks.ASTRALON_LOG.get());
+                output.accept(ModBlocks.STRIPPED_ASTRALON_LOG.get());
+                output.accept(ModBlocks.STRIPPED_ASTRALON_WOOD.get());
+                output.accept(ModBlocks.ASTRALON_PLANKS.get());
+                output.accept(ModBlocks.ASTRALON_LEAVES.get());
+
             }).build());
 
     public static void register(IEventBus eventBus)

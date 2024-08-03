@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "panitas:block/astralon_log_top",
+    "side": "panitas:block/astralon_log"
+  }
+}

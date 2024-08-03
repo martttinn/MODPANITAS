@@ -1,2 +1,4 @@
-// 1.20.1	2024-07-30T20:32:36.7205888	Tags for minecraft:item mod id panitas
+// 1.20.1	2024-08-03T12:24:53.1040563	Tags for minecraft:item mod id panitas
+4cd1557b48199c451c4937f176e6e04e5382d0fd data/minecraft/tags/items/logs_that_burn.json
+af34de7b4a797a0b3056aab2205bc370b0abf912 data/minecraft/tags/items/planks.json
 633bb9cd804b1feede0cb6042c346489a7f4f1c3 data/minecraft/tags/items/trimmable_armor.json

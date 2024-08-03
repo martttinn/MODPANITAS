@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "panitas:block/stripped_astralon_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "panitas:block/stripped_astralon_wood"
+    },
+    "axis=z": {
+      "model": "panitas:block/stripped_astralon_wood_horizontal",
+      "x": 90
+    }
+  }
+}
